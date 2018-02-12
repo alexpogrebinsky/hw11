@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+    <p id="goodbye" class="goodbye">Goodbye</p>
+
+
+
+
+    <div id="fadeout">
+        Temp <p><input id="tempinput"></p>
+
+        <br /><br />
+        <input type="radio" id="celbtn" name="choice" />C<br />
+        <input type="radio" id="ferbtn" name="choice" />F
+
+        <br />
+        <br />
+        <button id="calculate" onclick="results()">Calculate</button>
+
+        <br /></b><hr />
+        Results:<div id="results" class="alert"></div>
+        <hr />
+        <button id="tryagain" onclick="clearSelection()">Try Again</button>
+
+        <br />
+
+        <button id="exit" onclick="exit()">Exit</button>
+    </div>
+</body>
+</html>
